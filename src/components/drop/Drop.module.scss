@@ -1,0 +1,58 @@
+.menu_item {
+  position: relative;
+  font-size: 12px;
+  width: 100px;
+  background-color: white;
+
+  p {
+    border: 1px solid #adb3b6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #4c4c80;
+    font-weight: 400;
+
+    i {
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: #f1f4f5;
+    }
+  }
+
+  button {
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  button, p {
+    text-align: left;
+    padding: 5px;
+  }
+}
+
+
+.dropdown {
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: 0;
+  width: 100px;
+  z-index: 9999;
+  margin-top: 1px;
+
+}
+
+.show {
+  display: block;
+}
+
+.dropdown_submenu {
+  position: absolute;
+}
